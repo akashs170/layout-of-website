@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #logo {
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgreen;
+            padding-left: 2%;
+            line-height: 50px;
+            margin-bottom: 10px;
+        }
+
+        #nav {
+            width: 100%;
+            min-height: 30px;
+            background-color: lightgreen;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #header {
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            margin-bottom: 10px;
+
+        }
+
+        #main-div {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #side-area {
+            width: 27%;
+            min-height: 400px;
+            background-color: lightgreen;
+            float: left;
+        }
+
+        #body-area {
+            width: 70%;
+            min-height: 400px;
+            background-color: lightgreen;
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #footer {
+            width: 100%;
+            min-height: 109px;
+            background-color: lightgreen;
+        }
+
+        #container {
+            width: 80%;
+            background-color: yellowgreen;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">
+            logo
+        </div>
+
+        <div id="nav">
+            navigation bar
+        </div>
+        <div id="header">
+            header
+        </div>
+        <div id="main-div" class="clearfix">
+            <div id="side-area">
+                side area
+            </div>
+            <div id="body-area">
+                boady area
+            </div>
+        </div>
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+
+</html>
